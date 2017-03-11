@@ -13351,29 +13351,29 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="U3" library="reach_custom" deviceset="MCP9600" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
-<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES"/>
-<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="0"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="XTC2" library="reach_custom" deviceset="NEWPORT_THERMOCOUPLE_CONNECTOR" device="PCC-SMP-V"/>
 <part name="U4" library="reach_custom" deviceset="MCP9600" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
-<part name="R13" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES"/>
-<part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R13" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="10k"/>
+<part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="2.2k"/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="XTC3" library="reach_custom" deviceset="NEWPORT_THERMOCOUPLE_CONNECTOR" device="PCC-SMP-V"/>
 <part name="U5" library="reach_custom" deviceset="MCP9600" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="R22" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES"/>
-<part name="R24" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R22" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="10k"/>
+<part name="R24" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="4.3k"/>
 <part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
 <part name="XTC4" library="reach_custom" deviceset="NEWPORT_THERMOCOUPLE_CONNECTOR" device="PCC-SMP-V"/>
 <part name="U6" library="reach_custom" deviceset="MCP9600" device=""/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
-<part name="R26" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES"/>
-<part name="R27" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R26" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="10k"/>
+<part name="R27" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="7.5k"/>
 <part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0402" value="0.1uF"/>
 <part name="C26" library="rcl" deviceset="C-EU" device="C0402" value="0.1uF"/>
@@ -15924,7 +15924,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="U18" gate="G$1" x="170.18" y="187.96"/>
 <instance part="P8" gate="G$1" x="63.5" y="58.42"/>
 <instance part="P9" gate="G$1" x="172.72" y="58.42"/>
-<instance part="R23" gate="G$1" x="129.54" y="40.64" rot="R90"/>
+<instance part="R23" gate="G$1" x="106.68" y="40.64" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -16001,7 +16001,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="I2C2_SCL" class="0">
 <segment>
 <wire x1="165.1" y1="63.5" x2="139.7" y2="63.5" width="0.1524" layer="91"/>
-<label x="139.7" y="63.5" size="1.778" layer="95"/>
+<label x="139.7" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="P9" gate="G$1" pin="19"/>
 </segment>
 <segment>
@@ -16013,7 +16013,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="I2C2_SDA" class="0">
 <segment>
 <wire x1="180.34" y1="63.5" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
-<label x="182.88" y="63.5" size="1.778" layer="95"/>
+<label x="205.74" y="63.5" size="1.778" layer="95" xref="yes"/>
 <pinref part="P9" gate="G$1" pin="20"/>
 </segment>
 <segment>
@@ -16052,8 +16052,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="45.72" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
-<label x="129.54" y="48.26" size="1.778" layer="95" rot="R180"/>
+<wire x1="106.68" y1="45.72" x2="106.68" y2="53.34" width="0.1524" layer="91"/>
+<label x="106.68" y="53.34" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <wire x1="152.4" y1="193.04" x2="114.3" y2="193.04" width="0.1524" layer="91"/>
@@ -16084,106 +16084,133 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </net>
 <net name="SPI1_SCLK" class="0">
 <segment>
-<wire x1="165.1" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
-<label x="139.7" y="48.26" size="1.778" layer="95"/>
+<wire x1="165.1" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
+<label x="142.24" y="48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="P9" gate="G$1" pin="31"/>
 </segment>
 </net>
 <net name="SPI1_CS0" class="0">
 <segment>
 <pinref part="P9" gate="G$1" pin="27"/>
-<wire x1="165.1" y1="53.34" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
-<label x="139.7" y="53.34" size="1.778" layer="95"/>
+<wire x1="165.1" y1="53.34" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
+<label x="142.24" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ENABLE" class="0">
 <segment>
 <pinref part="P9" gate="G$1" pin="41"/>
-<wire x1="165.1" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
-<label x="157.48" y="35.56" size="1.778" layer="95" rot="MR0"/>
+<wire x1="165.1" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
+<label x="124.46" y="35.56" size="1.778" layer="95" rot="MR0"/>
 <pinref part="R23" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SPI1_MOSI" class="0">
 <segment>
 <wire x1="180.34" y1="50.8" x2="205.74" y2="50.8" width="0.1524" layer="91"/>
-<label x="182.88" y="50.8" size="1.778" layer="95"/>
+<label x="205.74" y="50.8" size="1.778" layer="95" xref="yes"/>
 <pinref part="P9" gate="G$1" pin="30"/>
 </segment>
 </net>
 <net name="VDD_ADC" class="0">
 <segment>
-<wire x1="180.34" y1="48.26" x2="205.74" y2="48.26" width="0.1524" layer="91"/>
-<label x="182.88" y="48.26" size="1.778" layer="95"/>
+<label x="205.74" y="45.72" size="1.778" layer="95" xref="yes"/>
 <pinref part="P9" gate="G$1" pin="32"/>
+<wire x1="180.34" y1="48.26" x2="200.66" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="48.26" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="45.72" x2="205.74" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FAULT_REACH" class="0">
 <segment>
 <pinref part="P9" gate="G$1" pin="21"/>
-<wire x1="165.1" y1="60.96" x2="139.7" y2="60.96" width="0.1524" layer="91"/>
-<label x="139.7" y="60.96" size="1.778" layer="95"/>
+<label x="139.7" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="60.96" x2="142.24" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="60.96" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="58.42" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DIR_B" class="0">
 <segment>
 <pinref part="P9" gate="G$1" pin="26"/>
 <wire x1="180.34" y1="55.88" x2="205.74" y2="55.88" width="0.1524" layer="91"/>
-<label x="182.88" y="55.88" size="1.778" layer="95"/>
+<label x="205.74" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="STEP_B" class="0">
 <segment>
 <pinref part="P8" gate="G$1" pin="7"/>
-<wire x1="55.88" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
-<label x="38.1" y="78.74" size="1.778" layer="95"/>
+<wire x1="55.88" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
+<label x="40.64" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="STEP_A" class="0">
 <segment>
 <pinref part="P9" gate="G$1" pin="15"/>
-<wire x1="165.1" y1="68.58" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
-<label x="139.7" y="68.58" size="1.778" layer="95"/>
+<label x="139.7" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="68.58" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="68.58" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DIR_A" class="0">
 <segment>
 <pinref part="P9" gate="G$1" pin="17"/>
-<wire x1="165.1" y1="66.04" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
-<label x="139.7" y="66.04" size="1.778" layer="95"/>
+<label x="139.7" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="66.04" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="66.04" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="68.58" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="THERM_EXT3" class="0">
 <segment>
 <pinref part="P9" gate="G$1" pin="39"/>
-<wire x1="165.1" y1="38.1" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
-<label x="139.7" y="38.1" size="1.778" layer="95"/>
+<wire x1="165.1" y1="38.1" x2="154.94" y2="38.1" width="0.1524" layer="91"/>
+<label x="154.94" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="THERM_EXT4" class="0">
 <segment>
 <pinref part="P9" gate="G$1" pin="40"/>
-<wire x1="180.34" y1="38.1" x2="205.74" y2="38.1" width="0.1524" layer="91"/>
-<label x="182.88" y="38.1" size="1.778" layer="95"/>
+<label x="205.74" y="35.56" size="1.778" layer="95" xref="yes"/>
+<wire x1="180.34" y1="38.1" x2="203.2" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="38.1" x2="203.2" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="35.56" x2="205.74" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="THERMO_1" class="0">
 <segment>
 <pinref part="P9" gate="G$1" pin="37"/>
-<wire x1="165.1" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
-<label x="139.7" y="40.64" size="1.778" layer="95"/>
+<label x="142.24" y="43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="40.64" x2="147.32" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="40.64" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="43.18" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="THERMO_2" class="0">
 <segment>
 <pinref part="P9" gate="G$1" pin="38"/>
 <wire x1="180.34" y1="40.64" x2="205.74" y2="40.64" width="0.1524" layer="91"/>
-<label x="182.88" y="40.64" size="1.778" layer="95"/>
+<label x="205.74" y="40.64" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,4,137.16,86.36,+5V,VDD_5V,,,,"/>
+<approved hash="102,4,205.74,86.36,+5V,VDD_5V,,,,"/>
+<approved hash="104,3,58.42,106.68,U11,VDD,VDD_5V,,,"/>
+<approved hash="104,4,152.4,200.66,U18,VCC,+3V3,,,"/>
+<approved hash="104,2,86.36,152.4,U10,SW,N$238,,,"/>
+<approved hash="104,1,73.66,187.96,U1,VCC,+3V3,,,"/>
+<approved hash="104,1,66.04,218.44,IC3P,VCC,+3V3,,,"/>
+<approved hash="104,1,73.66,218.44,IC4P,VCC,+3V3,,,"/>
+<approved hash="104,1,81.28,218.44,IC18P,VCC,+3V3,,,"/>
+<approved hash="104,1,73.66,73.66,U2,VCC,+3V3,,,"/>
+<approved hash="104,1,66.04,104.14,IC5P,VCC,+3V3,,,"/>
+<approved hash="104,1,73.66,104.14,IC6P,VCC,+3V3,,,"/>
+<approved hash="104,1,81.28,104.14,IC7P,VCC,+3V3,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
