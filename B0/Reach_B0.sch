@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="no" active="no"/>
@@ -17380,7 +17380,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="SPI1_CS0" class="0">
 <segment>
 <label x="157.48" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="165.1" y1="53.34" x2="157.48" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="P9" gate="G$1" pin="27"/>
+<wire x1="157.48" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENABLE" class="0">
@@ -17434,9 +17435,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="DIR_B" class="0">
 <segment>
-<pinref part="P9" gate="G$1" pin="26"/>
-<wire x1="180.34" y1="55.88" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
-<label x="187.96" y="55.88" size="1.778" layer="95" xref="yes"/>
+<label x="132.08" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="P9" gate="G$1" pin="21"/>
+<wire x1="165.1" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STEP_B" class="0">
@@ -17448,16 +17449,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="STEP_A" class="0">
 <segment>
-<pinref part="P9" gate="G$1" pin="15"/>
-<label x="154.94" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="165.1" y1="68.58" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
+<label x="193.04" y="55.88" size="1.778" layer="95" xref="yes"/>
+<pinref part="P9" gate="G$1" pin="26"/>
+<wire x1="180.34" y1="55.88" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DIR_A" class="0">
 <segment>
-<pinref part="P9" gate="G$1" pin="17"/>
-<label x="129.54" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="165.1" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
+<label x="134.62" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="P9" gate="G$1" pin="29"/>
+<wire x1="134.62" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="THERM_EXT3" class="0">
@@ -17483,16 +17484,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="DIR_C" class="0">
 <segment>
-<pinref part="P9" gate="G$1" pin="29"/>
-<wire x1="165.1" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
-<label x="129.54" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+<label x="129.54" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="P9" gate="G$1" pin="17"/>
+<wire x1="165.1" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STEP_C" class="0">
 <segment>
-<pinref part="P9" gate="G$1" pin="21"/>
-<wire x1="165.1" y1="60.96" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
-<label x="129.54" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+<label x="149.86" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="P9" gate="G$1" pin="15"/>
+<wire x1="165.1" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FAULT_X" class="0">
@@ -17512,16 +17513,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="HEATER_B" class="0">
 <segment>
-<pinref part="U11" gate="A" pin="LED3"/>
-<wire x1="312.42" y1="99.06" x2="347.98" y2="99.06" width="0.1524" layer="91"/>
-<label x="347.98" y="99.06" size="1.778" layer="95" xref="yes"/>
+<label x="347.98" y="93.98" size="1.778" layer="95" xref="yes"/>
+<wire x1="312.42" y1="93.98" x2="347.98" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U11" gate="A" pin="LED5"/>
 </segment>
 </net>
 <net name="HEATER_A" class="0">
 <segment>
-<pinref part="U11" gate="A" pin="LED5"/>
-<wire x1="312.42" y1="93.98" x2="347.98" y2="93.98" width="0.1524" layer="91"/>
-<label x="347.98" y="93.98" size="1.778" layer="95" xref="yes"/>
+<label x="347.98" y="99.06" size="1.778" layer="95" xref="yes"/>
+<pinref part="U11" gate="A" pin="LED3"/>
+<wire x1="347.98" y1="99.06" x2="312.42" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FAN4" class="0">
