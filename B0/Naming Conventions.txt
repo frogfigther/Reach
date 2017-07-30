@@ -1,0 +1,30 @@
+Reach Project Naming Conventions
+v1.0
+July 30, 2017
+
+Part Designators (replace # with numerical)
+JP#	Jumper Pads, for solder jumpers
+Q#	Transistors
+R#	Resistor
+C#	Capacitor
+L#	Inductor
+IC#	Integrated Circuit
+LED#	LED
+X#	Connector
+
+Device Naming
+X-EU_YYYY
+
+X denotes component type (R for resistor, C for capacitor,LED for LEDs)
+YYYY denotes component size (0402, 0805, 1206, etc)
+
+Examples: R-EU_0402, C-EU_0805, LED_0603
+
+
+Package Naming
+Use XYYYY for SMD such as capacitors and resistors
+Example: C0402, R0805
+
+Description should include any special requirements for the component
+
+Part numbers would be useful, but not required
